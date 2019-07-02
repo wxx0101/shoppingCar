@@ -1,0 +1,25 @@
+<!--components/list/list.wxml-->
+<scroll-view class="list" bindscroll="scrollFn" scroll-y scroll-into-view="{{'_'+ID}}">
+  <view wx:for="{{listArr}}" wx:key="{{index}}" class="demo" data-id="{{item.tag}}" id="{{'_'+item.tag}}">
+    <view class="title">{{item.categoryName}}</view>
+    <view>
+      <view wx:for="{{item.spuList}}" wx:for-index="key" wx:key="{{key}}" class="spuListItem" wx:for-item="spuListItem" data-key="{{spuListItem.spuId}}">
+        <image src="{{spuListItem.littleImageUrl}}" />
+        <view class="spuListItem_right">
+          <view class="spuName">{{spuListItem.spuName}}</view>
+          <view class="spuDesc">{{spuListItem.spuDesc}}</view>
+          <view class="praiseNum">
+            ￥{{spuListItem.currentPrice}}
+            <count class="is_count" spuId="{{spuListItem}}" spuList="{{item.spuList}}" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+ <view viewbindtap="checkshade"class="pop">
+  <view> 共{{allNum}}件 </view>
+  <view> 共计￥{{allPrice}} </view>
+  <view class='btn' bindtap='navigatorFn'>选好了</view>
+  </view>
+</scroll-view>

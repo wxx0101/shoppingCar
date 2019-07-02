@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navLeft":"../../components/navLeft/navLeft",
+    "list":"../../components/list/list"
+  }
+}

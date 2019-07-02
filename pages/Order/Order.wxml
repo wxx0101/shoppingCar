@@ -1,0 +1,33 @@
+<!--pages/Order/Order.wxml-->
+<view class="wrap">
+    <view class="header">
+        <view >西二旗店</view>
+        <view >距离您1.4km</view>
+    </view>
+    <view class="banner">
+        <swiper autoplay="{{true}}" >
+            <swiper-item wx:for="{{banner}}" wx:key="{{index}}">
+                <image src="{{item.image}}" />
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="main">
+        <view class="left">
+            <navLeft 
+                navArr="{{navArr}}" 
+                index="{{index}}"
+                bindchangeNav="changeNav"
+            ></navLeft>
+        </view>
+        <view class="right">
+            <list
+                listArr="{{listArr}}"
+                ID="{{id}}"
+                bindchangeIndex="changeIndex"
+            >
+            </list>
+        </view>
+    </view>
+
+
+</view>

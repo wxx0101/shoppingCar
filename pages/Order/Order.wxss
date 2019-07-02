@@ -1,0 +1,36 @@
+/* pages/Order/Order.wxss */
+.header{
+    width: 100%;
+    line-height: 2.5rem;
+    box-sizing: border-box;
+    padding: 0 .625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner{
+    width: 100%;
+    height: 6.25rem;
+}
+.banner swiper{
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+   
+}
+.banner swiper swiper-item>image{
+   width: 100%;
+   height:100%;
+}
+.main{
+    flex: 1;
+    overflow: hidden;
+    display:flex;
+}
+.left{
+    width: 6.875rem;
+}
+.right{
+    flex: 1;
+    overflow: hidden;
+}

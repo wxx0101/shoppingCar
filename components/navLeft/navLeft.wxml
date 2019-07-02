@@ -1,0 +1,15 @@
+<!--components/navLeft/navLeft.wxml-->
+<scroll-view scroll-y="{{true}}" class="scrollLeft">
+    <view 
+        wx:for="{{navArr}}" 
+        wx:key="{{i}}" 
+        wx:for-index="i"
+        data-ind="{{i}}"
+        data-tag='{{item.tag}}'
+        class="navItem {{i==index?'active':''}}"
+        bindtap="navItemClick"
+    >
+        {{item.categoryName}}
+    </view>
+
+</scroll-view>

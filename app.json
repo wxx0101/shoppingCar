@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/Order/Order",
+    "pages/take_meals/take_meals",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/logs/logs"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "position":"bottom",
+    "list":[
+      {
+        "pagePath":"pages/Order/Order",
+        "text":"点餐"
+      },
+      {
+        "pagePath":"pages/take_meals/take_meals",
+        "text":"取餐"
+      },
+      {
+        "pagePath":"pages/my/my",
+        "text":"我的"
+      }
+    ]
+  }
+}

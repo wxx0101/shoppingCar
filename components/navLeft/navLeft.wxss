@@ -1,0 +1,12 @@
+/* components/navLeft/navLeft.wxss */
+.navItem{
+    font-size: .6875rem;
+    line-height: 1.875rem;
+    text-align: center;
+}
+.scrollLeft{
+    height: 100%;
+}
+.active{
+    color: red;
+}

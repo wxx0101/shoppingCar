@@ -1,0 +1,5 @@
+<view class='count'>
+  <text bindtap='BtnFn' data-bool="0">-</text>
+  <text>{{num}}</text>
+  <text bindtap="BtnFn" data-bool="1">+</text>
+</view>
